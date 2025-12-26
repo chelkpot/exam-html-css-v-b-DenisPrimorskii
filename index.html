@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио художника</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="main-title">Портфолио художника</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <section class="about-section">
+                <h2>О художнике</h2>
+                <p class="about-text">
+                    Меня зовут Анна Иванова, я профессиональный художник с более чем 10-летним опытом работы 
+                    в различных техниках и направлениях живописи. Мои работы находятся в частных коллекциях 
+                    по всей России и за рубежом. Я считаю, что искусство должно вызывать эмоции и заставлять 
+                    зрителя задуматься о важных вещах.
+                </p>
+                <ul class="skills-list">
+                    <li><strong>Техники:</strong> масляная живопись, акварель, пастель, графика</li>
+                    <li><strong>Направления:</strong> реализм, импрессионизм, абстракционизм</li>
+                    <li><strong>Опыт работы:</strong> 12 лет профессиональной деятельности</li>
+                </ul>
+            </section>
+            <section id="gallery" class="gallery-section">
+                <h2>Галерея работ</h2>
+                <div class="gallery-container">
+                    <figure class="artwork">
+                        <img src="https://masterpiecer-images.s3.yandex.net/8c447df0851811eebbc3d20dae950626:upscaled" 
+                             alt="Картина маслом 'Рассвет в горах' - горный пейзаж с первыми лучами солнца">
+                        <figcaption>"Рассвет в горах", масло, 2024</figcaption>
+                    </figure>
+                    <figure class="artwork">
+                        <img src="https://masterpiecer-images.s3.yandex.net/68dd2291771311ee9348d20dae950626:upscaled" 
+                             alt="Акварель 'Городские огни' - ночной городской пейзаж">
+                        <figcaption>"Городские огни", акварель, 2023</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="contacts" class="contact-section">
+                <h2>Связаться со мной</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 Учебный проект</p>
+            <a href="https://www.artacademy.ru" target="_blank" class="external-link">Российская академия искусств</a>
+        </div>
+    </footer>
+</body>
+</html>
